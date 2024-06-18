@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './cita.css';
 function Cita({cita,setCitas, citas}) {
   const { mascota, propietario, fecha, hora, sintomas, id } = cita;
   

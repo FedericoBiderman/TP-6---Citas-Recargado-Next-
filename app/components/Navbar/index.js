@@ -1,9 +1,8 @@
-import React from 'react';
+import React from 'react'
 import Link from 'next/link';
-import './home.css';
 
-const Home = () => (
-  <div>
+export default function Nabvar() {
+  return (
     <nav>
       <ul>
         <li>
@@ -20,9 +19,5 @@ const Home = () => (
         </li>
       </ul>
     </nav>
-    <h1>Bienvenido a nuestro sitio de citas para mascotas</h1>
-    <p>¡Nos alegra tenerte aquí!</p>
-  </div>
-);
-
-export default Home;
+  )
+}

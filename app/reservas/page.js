@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from 'react';
-import ListadoCitas from '../components/ListadoCitas'; // Cambio en la ruta de importación
-import Formulario from '../components/Formulario'; // Cambio en la ruta de importación
+import ListadoCitas from '../components/ListadoCitas';
+import Formulario from '../components/Formulario';
+import "./reservas.css";
 
 function App() {
   const [citas, setCitas] = useState([]);

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './form.css';
 function Formulario({ handleSubmit }) {
   const [formValues, setFormValues] = useState({
     mascota: '',
@@ -16,7 +16,6 @@ function Formulario({ handleSubmit }) {
       ...prevState,
       [e.target.name]: e.target.value
     }));
-    // Limpiar el error del campo actual al modificar su valor
     setErrors(prevErrors => ({
       ...prevErrors,
       [e.target.name]: ''
@@ -37,7 +36,7 @@ function Formulario({ handleSubmit }) {
           hora: '',
           sintomas: ''
         });
-        setErrors({}); // Limpiar todos los errores después de enviar el formulario
+        setErrors({}); 
       }
     } else {
       setErrors(validationErrors);
@@ -47,8 +46,8 @@ function Formulario({ handleSubmit }) {
   const validateForm = () => {
     const errors = {};
     const today = new Date();
-    const currentDate = today.toISOString().split('T')[0]; // Obtiene la fecha actual en formato YYYY-MM-DD
-    const currentTime = today.toTimeString().split(' ')[0]; // Obtiene la hora actual en formato HH:MM:SS
+    const currentDate = today.toISOString().split('T')[0]; 
+    const currentTime = today.toTimeString().split(' ')[0];
   
     if (formValues.mascota === '' || !isNaN(formValues.mascota)) {
       errors.mascota = 'El nombre de la mascota es requerido y no puede contener números';

@@ -1,5 +1,6 @@
 import React from 'react';
 import Cita from '../Cita';
+import './listaCitas.css';
 function ListadoCitas({citas,setCitas}) {  
 
   const listaCitas = citas.map((cita, index) => (
