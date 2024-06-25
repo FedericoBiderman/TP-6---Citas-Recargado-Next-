@@ -1,28 +1,30 @@
 "use client";
 
-import React, { useState } from 'react';
-import ListadoCitas from '../components/ListadoCitas';
-import Formulario from '../components/Formulario';
-import "./reservas.css";
+import React, { useState, useEffect } from 'react';
+import Formulario from '../components/Formulario/index.js';
+import ListadoCitas from '../components/ListadoCitas/index.js';
+import './reservas.css';
 
 function App() {
-  const [citas, setCitas] = useState([]);
+  const initialCitas = JSON.parse(localStorage.getItem('citas')) || [];
+  const [citas, setCitas] = useState(initialCitas);
 
-  const agregarCita = cita => {
-    cita.id = Date.now();
-    setCitas([...citas, cita]);
+  useEffect(() => {
+    localStorage.setItem('citas', JSON.stringify(citas));
+  }, [citas]);
+
+  const handleSubmit = (cita) => {
+    setCitas([...citas, { ...cita, id: Date.now() }]);
   }
 
   return (
-    <>  
-      <h1>ADMINISTRADOR DE PACIENTES</h1>
-      <div className="container">
-        <div className="row">
-          <Formulario handleSubmit={agregarCita} />
-          <ListadoCitas citas={citas} setCitas={setCitas} />        
-        </div>
+    <div className="container">
+      <h1>Administrador de Pacientes</h1>
+      <div className="row">
+        <Formulario handleSubmit={handleSubmit} />
+        <ListadoCitas citas={citas} setCitas={setCitas} />
       </div>
-    </>
+    </div>
   );
 }
 

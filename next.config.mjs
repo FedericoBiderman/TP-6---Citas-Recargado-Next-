@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    basePath: "/TP-6---Citas-Recargado-Next-",
-    output: "export",
-    reactStrictMode: true,
-  };
+const nextConfig = {};
   
-  module.exports = nextConfig;
+  export default nextConfig;

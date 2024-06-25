@@ -1,10 +1,10 @@
 {
   "pages": {
-    "/contacto/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/contacto/page.css",
-      "static/chunks/app/contacto/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -23,11 +23,11 @@
       "static/css/app/reservas/page.css",
       "static/chunks/app/reservas/page.js"
     ],
-    "/page": [
+    "/contacto/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/css/app/contacto/page.css",
+      "static/chunks/app/contacto/page.js"
     ]
   }
 }

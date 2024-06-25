@@ -1,120 +1,121 @@
-/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/components/Cita/cita.css ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************/
-.cita {
-    padding: 1rem;
-    border-bottom: 1px solid #e1e1e1;
-    color: black;
-    margin-bottom: 10px;
-  }
-  
-  .cita p {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .cita p span {
-    font-weight: normal;
-  }
-  
-  .button.eliminar {
-    background-color: #c10059;
-    color: white;
-    margin-top: 1rem;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .button.eliminar:hover {
-    background-color: #ff0059;
-  }
-/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/components/ListadoCitas/listaCitas.css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************/
-
-.lista-citas {
-    margin-top: 20px;
-  }
-  
-  .lista-citas .cita {
-    padding: 1rem;
-    background: white;
-    border-bottom: 1px solid #e1e1e1;
-    color: black;
-    margin-bottom: 10px;
-  }
-  
-  .lista-citas .cita p {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .lista-citas .cita p span {
-    font-weight: normal;
-  }
-  
-  .lista-citas .cita:first-of-type {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-  }
-  
-  .lista-citas .cita:last-of-type {
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-  }
-  
-  .lista-citas .button.eliminar,
-  .lista-citas .button.eliminar:hover {
-    background-color: #c10059;
-    color: white;
-    margin-top: 1rem;
-  }
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/components/Formulario/form.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************************/
 .formulario {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .label {
-    font-weight: bold;
-    margin-top: 1rem;
-  }
-  
-  .input,
-  .textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .textarea {
-    resize: vertical;
-  }
-  
-  .error {
-    color: red;
-    font-weight: bold;
-    margin-top: 0.5rem;
-  }
-  
-  .button {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.input,
+.textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/components/Cita/cita.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.cita {
+  padding: 1rem;
+  border-bottom: 1px solid #e1e1e1;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.cita p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.cita p span {
+  font-weight: normal;
+}
+
+.button.eliminar {
+  background-color: #c10059;
+  color: white;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button.eliminar:hover {
+  background-color: #ff0059;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/components/ListadoCitas/listaCitas.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.lista-citas {
+  margin-top: 20px;
+}
+
+.lista-citas .cita {
+  padding: 1rem;
+  background: white;
+  border-bottom: 1px solid #e1e1e1;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.lista-citas .cita p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.lista-citas .cita p span {
+  font-weight: normal;
+}
+
+.lista-citas .cita:first-of-type {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.lista-citas .cita:last-of-type {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.lista-citas .button.eliminar,
+.lista-citas .button.eliminar:hover {
+  background-color: #c10059;
+  color: white;
+  margin-top: 1rem;
+}
+
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/reservas/reservas.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************/
@@ -131,18 +132,8 @@ html {
     padding-bottom: 5rem;
   }
   
-  h1 {
-    color: white;
-    padding: 3rem 0;
-    text-align: center;
-  
-    text-transform: uppercase;
-  
-    font-family: 'Staatliches', cursive;
-    letter-spacing: 1px;
-  }
-  
-  h2{
+  h1,
+  h2 {
     color: rgb(0, 0, 0);
     padding: 3rem 0;
     text-align: center;
